@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Kalam&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.content {
+  width: 300px;
+  height: 300px;
+  min-width: 300px;
+  perspective: 800px;
+  position: relative;
+}
+.content .bread {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  transition: all 0.8s ease;
+}
+.content .bread:nth-child(1) {
+  left: 30px;
+  bottom: -5%;
+}
+.content .bread:nth-child(1) .top {
+  background-color: #e4cdab;
+  box-shadow: inset 0px 0px 0px 5px #d4aa87;
+}
+.content .bread:nth-child(1) .bottom {
+  transition: all 1s ease;
+  background-image: linear-gradient(60deg, #e8bb94 63%, #daae88 65%);
+  box-shadow: 5px 21px 14px 0px rgba(0, 0, 0, 0.1),
+    2px 6px 6px -3px rgba(0, 0, 0, 0.2), 57px 55px 36px -3px rgba(0, 0, 0, 0.1),
+    77px 55px 36px -33px rgba(0, 0, 0, 0.05);
+}
+.content .bread:nth-child(1) .bottom:after {
+  background-color: #daae88;
+}
+.content .bread:nth-child(1) .bottom:before {
+  background-color: #e8bb94;
+}
+.content .bread:nth-child(2) {
+  left: 30px;
+  bottom: 15%;
+  z-index: 2;
+  transform: rotate(5deg);
+}
+.content .bread:nth-child(2) .top {
+  box-shadow: inset 16px 16px 30px -5px rgba(255, 255, 255, 0.24),
+    inset 0px 0px 0px 5px #e8bf9c;
+}
+.content .bread:nth-child(2) .bottom {
+  transition: all 1s ease;
+  box-shadow: 9px 24px 24px -10px rgba(0, 0, 0, 0.2);
+}
+.content .bread:nth-child(2) .bottom:before {
+  background-color: #f3c8a3;
+  transform: rotate(-30deg) rotateY(17deg);
+  left: -11px;
+  bottom: -3px;
+  width: 52px;
+  height: 125px;
+}
+.content .bread:nth-child(2) .bottom:after {
+  background-color: #e8bf9c;
+  transform: rotate(0deg) rotateY(80deg);
+  right: 14px;
+  bottom: 160px;
+  width: 44px;
+}
+.content .bread .top {
+  width: 100%;
+  height: 100%;
+  background-color: #f5debd;
+  transform-style: preserve-3d;
+  transform: rotateX(70deg) rotate(30deg);
+  bottom: 0;
+  border-radius: 50px;
+  position: absolute;
+  box-shadow: inset 0px 0px 0px 5px #e8bf9c;
+}
+.content .bread .bottom {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(60deg, #f3c8a3 63%, #e8bf9c 65%);
+  transform-style: preserve-3d;
+  transform: rotateX(70deg) rotate(30deg);
+  bottom: -30px;
+  right: 0px;
+  border-radius: 50px;
+  position: absolute;
+}
+.content .bread .bottom:before,
+.content .bread .bottom:after {
+  content: "";
+  position: absolute;
+  height: 110px;
+  border-radius: 20px;
+}
+.content .bread .bottom:before {
+  background-color: #f3c8a3;
+  transform: rotate(-40deg) rotateY(17deg);
+  left: -5px;
+  bottom: -9px;
+  width: 55px;
+}
+.content .bread .bottom:after {
+  background-color: #e8bf9c;
+  transform: rotate(0deg) rotateY(80deg);
+  right: -2px;
+  bottom: 150px;
+  width: 44px;
+}
