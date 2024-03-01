@@ -229,3 +229,140 @@ body {
   right: -260%;
   height: 40%;
 }
+.content .tomato {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -25%;
+  transition: all 0.8s 0.2s ease;
+  transform: rotate(-3deg);
+}
+.content .tomato .tomatoBody {
+  transform-style: preserve-3d;
+  transform: rotateX(72deg) rotate(0deg);
+  left: 8%;
+  position: absolute;
+  width: 70%;
+  height: 80%;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.content .tomato .tomatoBody:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ff4949;
+  border-radius: 100%;
+}
+.content .tomato .tomatoBody:after {
+  content: "";
+  position: absolute;
+  width: 101%;
+  height: 111%;
+  background-color: #ce4845;
+  bottom: -11%;
+  border-radius: 100%;
+  z-index: -3;
+}
+.content .tomato .tomatoBody span {
+  position: absolute;
+}
+.content .tomato .tomatoBody span:nth-child(1) {
+  width: 80%;
+  height: 80%;
+  border-radius: 100%;
+  background-color: black;
+  opacity: 0.1;
+  z-index: 1;
+  transform: rotate(-10deg);
+}
+.content .tomato .tomatoBody span:nth-child(2) {
+  width: 20%;
+  height: 44%;
+  border-radius: 100%;
+  left: 35%;
+  transform: rotate(-10deg);
+  background-color: #ff4949;
+  z-index: 1;
+}
+.content .tomato .tomatoBody span:nth-child(3) {
+  width: 20%;
+  height: 44%;
+  border-radius: 100%;
+  right: 35%;
+  transform: rotate(10deg);
+  background-color: #ff4949;
+  z-index: 1;
+}
+.content .tomato .tomatoBody span:nth-child(4) {
+  width: 70%;
+  height: 95%;
+  border-radius: 100%;
+  left: -1%;
+  top: -2%;
+  background-color: #ff4949;
+}
+.content .tomato .tomatoBody span:nth-child(5) {
+  width: 70%;
+  height: 95%;
+  border-radius: 100%;
+  right: -1%;
+  top: -5%;
+  background-color: #ff4949;
+}
+.content .tomato .tomatoBody .seed1 {
+  position: absolute;
+  width: 15px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: white;
+  left: 20%;
+  opacity: 0.2;
+}
+.content .tomato .tomatoBody .seed1:before,
+.content .tomato .tomatoBody .seed1:after {
+  position: absolute;
+  content: "";
+  background-color: inherit;
+  width: inherit;
+  height: inherit;
+  border-radius: 100%;
+}
+.content .tomato .tomatoBody .seed1:before {
+  left: 5px;
+  top: -30px;
+}
+.content .tomato .tomatoBody .seed1:after {
+  left: 15px;
+  bottom: -30px;
+}
+.content .tomato .tomatoBody .seed2 {
+  position: absolute;
+  width: 15px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: white;
+  right: 20%;
+  opacity: 0.2;
+}
+.content .tomato .tomatoBody .seed2:before,
+.content .tomato .tomatoBody .seed2:after {
+  position: absolute;
+  content: "";
+  background-color: inherit;
+  width: inherit;
+  height: inherit;
+  border-radius: 100%;
+}
+.content .tomato .tomatoBody .seed2:before {
+  right: 5px;
+  top: -30px;
+}
+.content .tomato .tomatoBody .seed2:after {
+  right: 15px;
+  bottom: -30px;
+}
