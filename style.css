@@ -449,3 +449,24 @@ body {
   bottom: 30%;
   background-color: #ffe359;
 }
+.content:hover .bread:nth-child(2) {
+  animation: anime 2s ease infinite alternate;
+  transform: rotate(-3deg);
+  bottom: 80%;
+}
+.content:hover .bread:nth-child(2) .bottom {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+.content:hover .lettuce {
+  transform: rotate(-8deg);
+  bottom: 5%;
+  animation: anime 2s ease infinite alternate;
+}
+.content:hover .tomato {
+  bottom: 0%;
+  transform: rotate(8deg);
+}
+.content:hover .cheese {
+  transform: rotateX(70deg) rotate(-10deg);
+  bottom: 42%;
+}
