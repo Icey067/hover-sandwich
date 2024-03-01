@@ -366,3 +366,86 @@ body {
   right: 15px;
   bottom: -30px;
 }
+.content .cheese {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  bottom: 0%;
+  left: 1%;
+  background-color: transparent;
+  transform-style: preserve-3d;
+  transform: rotateX(72deg) rotate(0deg);
+  box-shadow: inset -27px 0px 0px 50px #ffe359;
+  border-radius: 30px;
+  transition: all 0.8s 0.1s ease;
+}
+.content .cheese:before {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 30%;
+  background-color: #ffe359;
+  left: 10%;
+  border-radius: 100%;
+  bottom: 79%;
+}
+.content .cheese span {
+  position: absolute;
+  border-radius: 100%;
+}
+.content .cheese span:nth-child(1) {
+  width: 45%;
+  height: 40%;
+  left: 1%;
+  bottom: 50%;
+  box-shadow: inset 0px 0px 0px 40px #ffe359;
+}
+.content .cheese span:nth-child(2) {
+  width: 42%;
+  height: 39%;
+  left: 1%;
+  bottom: 22%;
+  box-shadow: inset 0px 0px 0px 44px #ffe359;
+}
+.content .cheese span:nth-child(3) {
+  width: 55%;
+  height: 51%;
+  left: 29%;
+  bottom: 14%;
+  box-shadow: inset 0px 0px 0px 43px #ffe359;
+}
+.content .cheese span:nth-child(4) {
+  width: 26%;
+  height: 24%;
+  left: 0%;
+  bottom: 9%;
+  box-shadow: inset 0px 0px 0px 28px #ffe359;
+}
+.content .cheese span:nth-child(5) {
+  width: 51%;
+  height: 44%;
+  left: 35%;
+  bottom: 52%;
+  box-shadow: inset 0px 0px 0px 54px #ffe359;
+}
+.content .cheese span:nth-child(6) {
+  width: 51%;
+  height: 38%;
+  left: 15%;
+  bottom: -6%;
+  background-color: #ffe359;
+}
+.content .cheese span:nth-child(7) {
+  width: 11%;
+  height: 68%;
+  left: -2%;
+  bottom: -4%;
+  background-color: #ffe359;
+}
+.content .cheese span:nth-child(8) {
+  width: 11%;
+  height: 68%;
+  left: 91%;
+  bottom: 30%;
+  background-color: #ffe359;
+}
