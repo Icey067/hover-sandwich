@@ -34,10 +34,6 @@ Here are the key files and their purposes:
 
 Feel free to explore and customize these files to suit your needs!
 
-## 📱 Responsive Design
-
-- The animated sandwich is responsive, ensuring a seamless experience on both desktops and mobile devices.
-
 ## 🔄 Animations
 
 The sandwich animation includes various CSS animations that create a dynamic and engaging effect. Here’s an overview:
