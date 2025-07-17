@@ -470,30 +470,3 @@ body {
   transform: rotateX(70deg) rotate(-10deg);
   bottom: 42%;
 }
-.tooltip {
-  position: absolute;
-  background-color: #eaeaea;
-  width: 110px;
-  height: 80px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate(-270px, -80px);
-  z-index: 1;
-}
-.tooltip:before {
-  position: absolute;
-  content: "";
-  background-color: inherit;
-  width: 25px;
-  height: 25px;
-  bottom: 10%;
-  transform: rotate(3deg);
-  left: 74%;
-}
-.tooltip span {
-  font-family: "Kalam", cursive;
-  font-size: 20px;
-  color: #987a7a;
-}
