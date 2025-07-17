@@ -1,5 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Kalam&display=swap");
 
+:root {
+  /* Bread colors */
+  --bread-light: #f5debd;
+  --bread-medium: #e8bf9c;
+  --bread-medium-alt: #f3c8a3;
+  --bread-dark: #e4cdab;
+  --bread-darker: #d4aa87;
+  --bread-gradient-light: #e8bb94;
+  --bread-gradient-dark: #daae88;
+
+  /* Lettuce colors */
+  --lettuce-green: #87cc87;
+
+  /* Tomato colors */
+  --tomato-red: #ff4949;
+  --tomato-dark: #ce4845;
+
+  /* Cheese colors */
+  --cheese-yellow: #ffe359;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -27,21 +48,25 @@ body {
   bottom: -5%;
 }
 .content .bread:nth-child(1) .top {
-  background-color: #e4cdab;
-  box-shadow: inset 0px 0px 0px 5px #d4aa87;
+  background-color: var(--bread-dark);
+  box-shadow: inset 0px 0px 0px 5px var(--bread-darker);
 }
 .content .bread:nth-child(1) .bottom {
   transition: all 1s ease;
-  background-image: linear-gradient(60deg, #e8bb94 63%, #daae88 65%);
+  background-image: linear-gradient(
+    60deg,
+    var(--bread-gradient-light) 63%,
+    var(--bread-gradient-dark) 65%
+  );
   box-shadow: 5px 21px 14px 0px rgba(0, 0, 0, 0.1),
     2px 6px 6px -3px rgba(0, 0, 0, 0.2), 57px 55px 36px -3px rgba(0, 0, 0, 0.1),
     77px 55px 36px -33px rgba(0, 0, 0, 0.05);
 }
 .content .bread:nth-child(1) .bottom:after {
-  background-color: #daae88;
+  background-color: var(--bread-gradient-dark);
 }
 .content .bread:nth-child(1) .bottom:before {
-  background-color: #e8bb94;
+  background-color: var(--bread-gradient-light);
 }
 .content .bread:nth-child(2) {
   left: 30px;
@@ -51,14 +76,14 @@ body {
 }
 .content .bread:nth-child(2) .top {
   box-shadow: inset 16px 16px 30px -5px rgba(255, 255, 255, 0.24),
-    inset 0px 0px 0px 5px #e8bf9c;
+    inset 0px 0px 0px 5px var(--bread-medium);
 }
 .content .bread:nth-child(2) .bottom {
   transition: all 1s ease;
   box-shadow: 9px 24px 24px -10px rgba(0, 0, 0, 0.2);
 }
 .content .bread:nth-child(2) .bottom:before {
-  background-color: #f3c8a3;
+  background-color: var(--bread-medium-alt);
   transform: rotate(-30deg) rotateY(17deg);
   left: -11px;
   bottom: -3px;
@@ -66,7 +91,7 @@ body {
   height: 125px;
 }
 .content .bread:nth-child(2) .bottom:after {
-  background-color: #e8bf9c;
+  background-color: var(--bread-medium);
   transform: rotate(0deg) rotateY(80deg);
   right: 14px;
   bottom: 160px;
@@ -75,18 +100,22 @@ body {
 .content .bread .top {
   width: 100%;
   height: 100%;
-  background-color: #f5debd;
+  background-color: var(--bread-light);
   transform-style: preserve-3d;
   transform: rotateX(70deg) rotate(30deg);
   bottom: 0;
   border-radius: 50px;
   position: absolute;
-  box-shadow: inset 0px 0px 0px 5px #e8bf9c;
+  box-shadow: inset 0px 0px 0px 5px var(--bread-medium);
 }
 .content .bread .bottom {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(60deg, #f3c8a3 63%, #e8bf9c 65%);
+  background-image: linear-gradient(
+    60deg,
+    var(--bread-medium-alt) 63%,
+    var(--bread-medium) 65%
+  );
   transform-style: preserve-3d;
   transform: rotateX(70deg) rotate(30deg);
   bottom: -30px;
@@ -102,14 +131,14 @@ body {
   border-radius: 20px;
 }
 .content .bread .bottom:before {
-  background-color: #f3c8a3;
+  background-color: var(--bread-medium-alt);
   transform: rotate(-40deg) rotateY(17deg);
   left: -5px;
   bottom: -9px;
   width: 55px;
 }
 .content .bread .bottom:after {
-  background-color: #e8bf9c;
+  background-color: var(--bread-medium);
   transform: rotate(0deg) rotateY(80deg);
   right: -2px;
   bottom: 150px;
@@ -137,7 +166,7 @@ body {
   width: 80%;
   height: 80%;
   border-radius: 100%;
-  background-color: #87cc87;
+  background-color: var(--lettuce-green);
 }
 .content .lettuce .leaves span:nth-child(1) {
   border-radius: 80px;
@@ -255,7 +284,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #ff4949;
+  background-color: var(--tomato-red);
   border-radius: 100%;
 }
 .content .tomato .tomatoBody:after {
@@ -263,7 +292,7 @@ body {
   position: absolute;
   width: 101%;
   height: 111%;
-  background-color: #ce4845;
+  background-color: var(--tomato-dark);
   bottom: -11%;
   border-radius: 100%;
   z-index: -3;
@@ -286,7 +315,7 @@ body {
   border-radius: 100%;
   left: 35%;
   transform: rotate(-10deg);
-  background-color: #ff4949;
+  background-color: var(--tomato-red);
   z-index: 1;
 }
 .content .tomato .tomatoBody span:nth-child(3) {
@@ -295,7 +324,7 @@ body {
   border-radius: 100%;
   right: 35%;
   transform: rotate(10deg);
-  background-color: #ff4949;
+  background-color: var(--tomato-red);
   z-index: 1;
 }
 .content .tomato .tomatoBody span:nth-child(4) {
@@ -304,7 +333,7 @@ body {
   border-radius: 100%;
   left: -1%;
   top: -2%;
-  background-color: #ff4949;
+  background-color: var(--tomato-red);
 }
 .content .tomato .tomatoBody span:nth-child(5) {
   width: 70%;
@@ -312,7 +341,7 @@ body {
   border-radius: 100%;
   right: -1%;
   top: -5%;
-  background-color: #ff4949;
+  background-color: var(--tomato-red);
 }
 .content .tomato .tomatoBody .seed1 {
   position: absolute;
@@ -375,7 +404,7 @@ body {
   background-color: transparent;
   transform-style: preserve-3d;
   transform: rotateX(72deg) rotate(0deg);
-  box-shadow: inset -27px 0px 0px 50px #ffe359;
+  box-shadow: inset -27px 0px 0px 50px var(--cheese-yellow);
   border-radius: 30px;
   transition: all 0.8s 0.1s ease;
 }
@@ -384,7 +413,7 @@ body {
   content: "";
   width: 70%;
   height: 30%;
-  background-color: #ffe359;
+  background-color: var(--cheese-yellow);
   left: 10%;
   border-radius: 100%;
   bottom: 79%;
@@ -398,56 +427,56 @@ body {
   height: 40%;
   left: 1%;
   bottom: 50%;
-  box-shadow: inset 0px 0px 0px 40px #ffe359;
+  box-shadow: inset 0px 0px 0px 40px var(--cheese-yellow);
 }
 .content .cheese span:nth-child(2) {
   width: 42%;
   height: 39%;
   left: 1%;
   bottom: 22%;
-  box-shadow: inset 0px 0px 0px 44px #ffe359;
+  box-shadow: inset 0px 0px 0px 44px var(--cheese-yellow);
 }
 .content .cheese span:nth-child(3) {
   width: 55%;
   height: 51%;
   left: 29%;
   bottom: 14%;
-  box-shadow: inset 0px 0px 0px 43px #ffe359;
+  box-shadow: inset 0px 0px 0px 43px var(--cheese-yellow);
 }
 .content .cheese span:nth-child(4) {
   width: 26%;
   height: 24%;
   left: 0%;
   bottom: 9%;
-  box-shadow: inset 0px 0px 0px 28px #ffe359;
+  box-shadow: inset 0px 0px 0px 28px var(--cheese-yellow);
 }
 .content .cheese span:nth-child(5) {
   width: 51%;
   height: 44%;
   left: 35%;
   bottom: 52%;
-  box-shadow: inset 0px 0px 0px 54px #ffe359;
+  box-shadow: inset 0px 0px 0px 54px var(--cheese-yellow);
 }
 .content .cheese span:nth-child(6) {
   width: 51%;
   height: 38%;
   left: 15%;
   bottom: -6%;
-  background-color: #ffe359;
+  background-color: var(--cheese-yellow);
 }
 .content .cheese span:nth-child(7) {
   width: 11%;
   height: 68%;
   left: -2%;
   bottom: -4%;
-  background-color: #ffe359;
+  background-color: var(--cheese-yellow);
 }
 .content .cheese span:nth-child(8) {
   width: 11%;
   height: 68%;
   left: 91%;
   bottom: 30%;
-  background-color: #ffe359;
+  background-color: var(--cheese-yellow);
 }
 .content:hover .bread:nth-child(2) {
   animation: anime 2s ease infinite alternate;
