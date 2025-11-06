@@ -76,14 +76,14 @@
       // Initialize theme
       setTheme(getPreferredTheme());
 
-      // Add click event listener to theme toggle button
+      //theme toggle button
       document.getElementById('theme-toggle').addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-theme');
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
         setTheme(newTheme);
       });
 
-      // Listen for system theme changes
+      // system theme changes
       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
         if (!localStorage.getItem('theme')) {
           setTheme(e.matches ? 'dark' : 'light');
